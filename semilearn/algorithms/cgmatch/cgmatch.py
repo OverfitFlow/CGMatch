@@ -13,7 +13,7 @@ from semilearn.algorithms.hooks import PseudoLabelingHook, DistAlignEMAHook
 from .utils import CGMatchThresholdingHook
 from semilearn.algorithms.utils import SSL_Argument, str2bool, concat_all_gather
 from sklearn.metrics import accuracy_score, balanced_accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
-from semilearn.core.criterions import calculate_nll_ece, calculate_ece
+from semilearn.core.criterions import calculate_ece
 
 @ALGORITHMS.register('cgmatch')
 class CGMatch(AlgorithmBase):
