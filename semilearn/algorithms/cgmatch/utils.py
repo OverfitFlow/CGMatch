@@ -9,7 +9,7 @@ from semilearn.algorithms.utils import concat_all_gather
 from semilearn.algorithms.hooks import MaskingHook
 
 
-class FixedThresholdingHook(MaskingHook):
+class CGMatchThresholdingHook(MaskingHook):
     """
     Dynamic Threshold.
     """
