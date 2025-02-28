@@ -10,7 +10,7 @@ from collections import Counter
 from semilearn.core.algorithmbase import AlgorithmBase
 from semilearn.core.utils import ALGORITHMS
 from semilearn.algorithms.hooks import PseudoLabelingHook, DistAlignEMAHook
-from .utils import FixedThresholdingHook
+from .utils import CGMatchThresholdingHook
 from semilearn.algorithms.utils import SSL_Argument, str2bool, concat_all_gather
 from sklearn.metrics import accuracy_score, balanced_accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 from semilearn.core.criterions import calculate_nll_ece, calculate_ece
@@ -61,7 +61,7 @@ class CGMatch(AlgorithmBase):
     
     def set_hooks(self):
         self.register_hook(PseudoLabelingHook(), "PseudoLabelingHook")
-        self.register_hook(FixedThresholdingHook(num_classes=self.num_classes, 
+        self.register_hook(CGMatchThresholdingHook(num_classes=self.num_classes, 
                                                  n_sigma=self.args.n_sigma, 
                                                  momentum=self.args.ema_p, 
                                                  per_class=self.args.per_class), "MaskingHook")
