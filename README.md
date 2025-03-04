@@ -6,7 +6,7 @@ Our implementation builds upon USB (https://github.com/microsoft/Semi-supervised
 
 To install the required packages, please refer to the description in the USB.
 
-To train using CGMatch, simply run:
+To train using CGMatch, we take the dataset CIFAR10 with 40 labels as an example, please run:
 ```
 python train.py --c config/classic_cv/cgmatch/cgmatch_cifar10_40_0.yaml
 ```
