@@ -1,6 +1,6 @@
 # CGMatch
 
-This repository hosts the official implementation of the paper **"CGMatch: A Different Perspective on Semi-supervised Learning"**. CGMatch addresses a critical challenge in semi-supervised learning (SSL) where conventional methods struggle with severely limited labeled data (4, 10 and 25 labels per class). In the paper, a new metric known as Count-Gap (CG) is introduced to effectively discover unlabeled examples beneficial for model training for the fist time.
+This repository hosts the official implementation of the **CVPR 2025** paper **"CGMatch: A Different Perspective on Semi-supervised Learning"**. CGMatch addresses a critical challenge in semi-supervised learning (SSL) where conventional methods struggle with severely limited labeled data (4, 10 and 25 labels per class). In the paper, a new metric known as Count-Gap (CG) is introduced to effectively discover unlabeled examples beneficial for model training for the fist time.
 
 **Prerequisites**
 
