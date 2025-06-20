@@ -12,3 +12,17 @@ To train using CGMatch, we take the dataset CIFAR10 with 40 labeled data as an e
 ```
 python train.py --c config/classic_cv/cgmatch/cgmatch_cifar10_40_0.yaml
 ```
+
+**Citation**
+
+If you find this repository useful, please cite our paper:
+```
+@InProceedings{Cheng_2025_CVPR,
+    author    = {Cheng, Bo and Lu, Jueqing and Tian, Yuan and Zhao, Haifeng and Chang, Yi and Du, Lan},
+    title     = {CGMatch: A Different Perspective of Semi-supervised Learning},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {15381-15391}
+}
+```
